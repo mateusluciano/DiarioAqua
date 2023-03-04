@@ -2,12 +2,20 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+    --cor01: #008AD8;
+    --cor02: #31D8BA;
+}
+
 body {
     background-image: url(imagens/bg.png);
     background-position: center top;
     background-size: cover;
+    position: relative;
 }
 main {
+    display: block;
     min-width: 150px;
     max-width: 300px;
     margin: auto;
@@ -15,6 +23,11 @@ main {
     background-color: white;
     border-radius: 35px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.195);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
 }
 .logo{
     display: block;
@@ -39,11 +52,11 @@ input.bt {
     max-width: 240px;
     border-radius: 45px;
     border-color: rgba(255, 255, 255, 0);
-    background-color: #008AD8;
+    background-image: linear-gradient(to top, var(--cor01), var(--cor02));
     color: white;
     padding: 5.5px;
 }
 .divisor{
-    margin: 20px auto;
+    margin: 15px auto;
     width: 225px;
 }
