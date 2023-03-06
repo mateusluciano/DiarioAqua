@@ -46,9 +46,12 @@ input.bt {
     max-width: 240px;
     border-radius: 45px;
     border-color: rgba(255, 255, 255, 0);
-    background-image: linear-gradient(to top, var(--cor01), var(--cor02));
+    background-color: var(--cor01);
     color: white;
     padding: 5.5px;
+}
+input.bt:hover {
+    background-color: var(--cor02);
 }
 .divisor{
     margin: 15px auto;
