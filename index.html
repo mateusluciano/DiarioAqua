@@ -10,9 +10,11 @@
 </head>
 <body>
     <header>
-        <img src="imagens/Aqua Logo.png" alt="">
-    </header>
-    <main>
+        <picture>
+            <source media="(max-width: 1200px)" srcset="imagens/Aqua Logo.png" type="image/png">
+            <img src="imagens/Aqua Logo 120px.png" type="image/png" alt="Aqua">
+        </picture>
+
         <section id="inicio">
             <h1>BEBA + ÁGUA</h1>
             <P>Veja algumas dicas e nosso guia para alcançar a hidratação diária ideal</P>
@@ -20,8 +22,9 @@
 
             <img src="" alt="">
         </section>
-
-        <section id="eu">
+    </header>
+    <main>
+        <section class="gerais" id="eu">
             <img class="img" src="" alt="">
 
             <h3>Oie</h3>
@@ -29,12 +32,13 @@
             <button>Alcançando o mínimo</button>
         </section>
 
-        <section id="dicas">
+        <section class="gerais" id="dicas">
             <h2>Algumas Dicas</h2>
             <p>Veja alguns pontos para beber mais água diariamente</p>
 
             <img class="img" src="" alt="">
             
+            <!--aside-->
             <img class="img" src="" alt="">
             <h3 class="sub">SEM ÁGUA</h3>
             <h3>GELADA</h3>
@@ -51,7 +55,7 @@
             <p>Cada garrafinha tem um "glup" diferente, e algumas te darão a falsa impressão de hidratação!</p>
         </section>
 
-        <section id="calculo">
+        <section class="gerais" id="calculo">
             <h4>Calcule</h4>
             <p>Veja quantos litros de água tu precisa beber diariamente:</p>
             <form action="">
@@ -67,8 +71,8 @@
                 <input type="radio" name="clima" id="exer">
                 <label for="clima">-30°<small>c</small></label>
 
-                <input type="range" name="peso" id="pesorange">
-                <input type="number" name="peso" id="pesoescrito">
+                <input type="range" name="peso" id="pesorange" min="10" max="250" value="60">
+                <input type="number" name="peso" id="pesoescrito" min="10" max="250" value="60">
                 <!-- Inserir JS para acrescentar a string "kg" -->
             </form>
             
@@ -76,7 +80,7 @@
             <img class="img" src="" alt="">
         </section>
 
-        <section id="guia">
+        <section class="gerais" id="guia">
             <h3>Guia Prático</h3>
             <p>Acesse agora nosso guia e veja como alcançar sua meta diária de hidratação.</p>
 
@@ -99,5 +103,8 @@
         <img src="imagens/Aqua Logo 120px.png" alt="">
         
     </footer>
+    <script src="js/calculadoradehidratacao.js"></script>
+    <script src="js/inputs.js"></script>
+    <script src="js/ajuste.js"></script>
 </body>
 </html>
