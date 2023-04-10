@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aqua | Be Better</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -13,7 +13,9 @@
     <header>
         <section id="header">
             <div class="extremidade">
-                <img id="menu" src="imagens/menu.png" alt="Menu">
+                <span id="menu" class="material-symbols-outlined">
+                    menu
+                </span>
             </div>
             <div id="central">
                 <img src="imagens/Aqua Logo 120px.png" alt="Aqua Logo">
@@ -25,25 +27,26 @@
 
         </section>
         <section id="home">
-            <div class="divisor">
+            <div class="infos">
                 <h1>BEBA + ÁGUA</h1>
-                <div id="slider">
-                    <p class="slide">Mantenha-se hidratad: Dicas simples e eficazes para beber mais água todos os dias</p>
-                    <p class="slide">Descubra a quantidade ideal de água para o seu corpo</p>
-                    <p class="slide">Receba um guia prático de como atingir sua meta diária de hidratação</p>
+                <div id="slide-container">
+                    <p class="slide-text" id="t01">Mantenha-se hidratado: Dicas simples e eficazes para beber mais água todos os dias</p>
+                    <p class="slide-text" id="t02">Descubra a quantidade ideal de água para o seu corpo</p>
+                    <p class="slide-text" id="t03">Receba um guia prático de como atingir sua meta diária de hidratação</p>
                 </div>
                 <div class="pager">
-                    <span class="pager-item"></span>
-                    <span class="pager-item"></span>
-                    <span class="pager-item"></span>
+                    <span class="pagerItem" id="p01"></span>
+                    <span class="pagerItem" id="p02"></span>
+                    <span class="pagerItem" id="p03"></span>
                 </div>
-                <button class="home">Diiicas</button>
-                <button class="home">Liiitros</button>
-                <button class="home">Reeeceba</button>
+                <div class="botts">
+                    <button class="home" id="b01">Diiicas</button>
+                    <button class="home" id="b02">Liiitros</button>
+                    <button class="home" id="b03">Reeeceba</button>
+                </div>
             </div>
 
             <div class="imagem">
-                <img src="imagens/matt/mattLight200px.png" alt="">
             </div>
         </section>
     </header>
@@ -53,5 +56,7 @@
     <footer>
 
     </footer>
+
+    <script src="transition.js"></script>
 </body>
 </html>
