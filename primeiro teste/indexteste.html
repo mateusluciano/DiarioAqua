@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua - O melhor jeito de beber água</title>
+    <link rel="shortcut icon" href="imagens/Logo 120x120.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 1200px)" srcset="imagens/Aqua Logo.png" type="image/png">
+            <img src="imagens/Aqua Logo 120px.png" type="image/png" alt="Aqua">
+        </picture>
+
+        <section id="inicio">
+            <h1>BEBA + ÁGUA</h1>
+            <P>Veja algumas dicas e nosso guia para alcançar a hidratação diária ideal</P>
+            <button>Dicas</button>
+
+            <img src="" alt="">
+        </section>
+    </header>
+    <main>
+        <section class="gerais" id="eu">
+            <img class="img" src="" alt="">
+
+            <h3>Oie</h3>
+            <p>Sou o Matt e vou te mostrar com tomar 2x mais água e ficar super hidratado</p>
+            <button>Alcançando o mínimo</button>
+        </section>
+
+        <section class="gerais" id="dicas">
+            <h2>Algumas Dicas</h2>
+            <p>Veja alguns pontos para beber mais água diariamente</p>
+
+            <img class="img" src="" alt="">
+            
+            <!--aside-->
+            <img class="img" src="" alt="">
+            <h3 class="sub">SEM ÁGUA</h3>
+            <h3>GELADA</h3>
+            <p>Você provavelmente ama tomar uma água gelada! Porém a saciedade dela não te hidratará!</p>
+
+            <img class="img" src="" alt="">
+            <h3 class="sub">ATIVE OS</h3>
+            <h3>LEMBRETES</h3>
+            <p>Escolha um app, alarmes ou um timer, não importa, desde que sejas lembrado de hidratar-se!</p>
+
+            <img class="img" src="" alt="">
+            <h3 class="sub">Glup, Glup</h3>
+            <h3>FLUXO</h3>
+            <p>Cada garrafinha tem um "glup" diferente, e algumas te darão a falsa impressão de hidratação!</p>
+        </section>
+
+        <section class="gerais" id="calculo">
+            <h4>Calcule</h4>
+            <p>Veja quantos litros de água tu precisa beber diariamente:</p>
+            <form action="">
+                
+                <p class="ttc">Atividades Físicas</p>
+                <input type="radio" name="atividades" id="exer" checked><label for="atividades">Habitualmente</label>
+                <input type="radio" name="atividades" id="exer">
+                <label for="atividades">Sedentário</label>
+
+
+                <p class="ttc">Clima Habitual</p>
+                <input type="radio" name="clima" id="exer" checked><label for="clima">+28°<small>c</small></label>
+                <input type="radio" name="clima" id="exer">
+                <label for="clima">-28°<small>c</small></label>
+
+                <input type="range" name="peso" id="pesorange" min="10" max="250" value="60">
+                <input type="number" name="peso" id="pesoescrito" min="10" max="250" value="60">
+                <!-- Inserir JS para acrescentar a string "kg" -->
+            </form>
+            
+            <h4 id="litros">Sua meta é de X litros d'água por dia</h4>
+            <img class="img" src="" alt="">
+        </section>
+
+        <section class="gerais" id="guia">
+            <h3>Guia Prático</h3>
+            <p>Acesse agora nosso guia e veja como alcançar sua meta diária de hidratação.</p>
+
+            <p>Contador: <span id="contador">100</span><p><small>uni.</small></p></p>
+
+
+            <img class="img" src="" alt="">
+
+
+            <h3>Acesse gratuitamente preenchendo os dados abaixo:</h3>
+            
+            <input type="text" name="nome" id="nome" placeholder="Nome e Sobrenome">
+            <input type="tel" name="telefone" id="telefone" placeholder="WhatsApp">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+
+            <input type="button" value="Acessar e-book">
+        </section>
+    </main>
+    <footer>
+        <img src="imagens/Aqua Logo 120px.png" alt="">
+        
+    </footer>
+    <script src="js/calculadoradehidratacao.js"></script>
+    <script src="js/inputs.js"></script>
+    <script src="js/ajuste.js"></script>
+</body>
+</html>
