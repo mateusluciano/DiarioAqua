@@ -22,3 +22,34 @@
   --fonte01: 'Montserrat', Tahoma, sans-serif;
   --fonte02: 'Roboto Condensed', 'Montserrat', Tahoma, sans-serif;
 }
+
+body, html{
+    background-color: #DDF2F1;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    margin: 40px 10px 20px 10px;
+    padding: 0px 20px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 0px 11.33px rgba(0, 0, 0, 0.10);
+}
+
+section#header {
+    padding: 30px 0px;
+}
+
+div#esquerda{
+    
+}
+
+div#central {
+
+}
+
+div#direita {
+
+}
