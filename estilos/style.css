@@ -52,6 +52,14 @@ section#header {
     padding: 30px 0px;
 }
 
+/* Menu */
+div#menu {
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px var(--cor003);
+    color: var(--cor003);
+}
+
+/* Logo */
 div#central {
     width: 120px;
     height: 34px;
@@ -62,12 +70,93 @@ div#central {
     background-size: contain;
 }
 
+/* Contador Direito */
 div#divContador {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    align-content: center;
     column-gap: 5px;
+
+    font-family: var(--fonte01);
+    font-size: 0.85em;
+    font-weight: 400;
+    color: var(--cor007);
 }
 
+
+/* --- SECTION 1 --- */
+/* -- Seção Pai -- */
+section#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -- Div FILHO -- */
+div.infos {
+
+}
+
+/* H1 */
+header > section#home > div.infos > h1 {
+    font-family: var(--fonte02);
+    -webkit-text-stroke: 1.15px var(--cor001);
+    font-size: 3.25em;
+    color: var(--cor001);
+}
+
+/* Parágrafos */
+header > section#home > div.infos  p {
+    font-family: var(--fonte01);
+    font-size: 1.05em;
+
+    color: var(--cor007);
+}
+
+/* Pagers */
+header > section#home > div.infos span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(37, 208, 188, 0.45);
+    margin: 0px 3px;
+    border-radius: 50%;
+}
+
+/* Pagers Ativos */
+header > section#home > div.infos span:active {
+    background-color: rgba(37, 208, 188, 0.95);
+}
+
+/* Botões */
+header > section#home > div.infos button {
+    padding: 5px 30px;
+    border-radius: 30px;
+    background-color: var(--cor001);
+
+    font-family: var(--fonte02);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+/* Slides */
+p#t02, p#t03, #b02, #b03 {
+    display: none;
+}
+
+
+
+/* -- DIV FILHO Imagem -- */
+div.imagem {
+    min-width: 107px;
+    min-height: 204px;
+
+    background-image: url(../imagens/matt/mattLight200px.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
