@@ -53,11 +53,15 @@ section#header {
     margin-bottom: 60px;
 }
 
-/* Menu */
+/* Botão Menu */
 div#btmenu {
     font-weight: bold;
     -webkit-text-stroke: 0.2px var(--cor003);
     color: var(--cor003);
+}
+
+div#menu {
+    display: none;
 }
 
 /* Logo */
