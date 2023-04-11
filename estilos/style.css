@@ -54,7 +54,7 @@ section#header {
 }
 
 /* Menu */
-div#menu {
+div#btmenu {
     font-weight: bold;
     -webkit-text-stroke: 0.2px var(--cor003);
     color: var(--cor003);
@@ -65,7 +65,7 @@ div#central {
     width: 120px;
     height: 34px;
 
-    background-image: url(../imagens/Aqua\ Logo\ 120px.png);
+    background-image: url(../imagens/Aqua\ Logo\ 200px.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -165,7 +165,7 @@ div.imagem {
     
     flex-basis: 43%;
 
-    background-image: url(../imagens/matt/mattLight300px.png);
+    background-image: url(../imagens/matt/mattLight400px.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
