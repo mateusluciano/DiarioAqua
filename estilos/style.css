@@ -54,10 +54,19 @@ section#header {
 }
 
 /* Botão Menu */
-div#btmenu {
+button#btmenu {
     font-weight: bold;
     -webkit-text-stroke: 0.2px var(--cor003);
     color: var(--cor003);
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+button#btmenu:hover {
+    background-color: var(--cor002);
+    color: white;
+    border-radius: 9px;
+    transition-duration: 0.85s;
 }
 
 menu#menu {
@@ -65,12 +74,59 @@ menu#menu {
     position: fixed; /* ou absolute */
     top: 10px;
     left: 0;
-    width: 80%;
+    width: 60%;
     height: 95%;
     z-index: 9999;
     background-color: var(--cor005);
 
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.15);
     color: var(--cor007);
+    list-style-type: none;
+}
+menu h3 {
+    margin: 20px 0px;
+
+    font-family: var(--fonte01);
+    font-weight: 700;
+    font-size: 1.35em;
+    color: var(--cor007);
+    
+    text-align: center;
+}
+menu > ul {
+    list-style-type: none;
+    line-height: 2em;
+    
+    padding: 0px;
+}
+menu > ul > li {
+    text-align: center;
+    
+    max-width: 80%;
+    border-radius: 50px;
+
+    background-color: var(--cor002);
+    padding: 5px 15px;
+    margin: 10px 0px;
+    
+    margin: 10px auto;
+}
+menu > ul > li:hover {
+    background-color: var(--cor003);
+    cursor: pointer;
+}
+menu > ul > li:active {
+    background-color: var(--cor006);
+}
+menu > ul > li > a {
+    text-decoration: none;
+    font-family: var(--fonte01);
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95em;
+    font-variant: small-caps;
 }
 
 /* Logo */
