@@ -160,7 +160,7 @@ p#t02, p#t03, #b02, #b03 {
 
 /* -- DIV FILHO Imagem -- */
 div.imagem {
-    min-height: 25vh;
+    min-height: 20vh;
     
     flex-basis: 45%;
 
