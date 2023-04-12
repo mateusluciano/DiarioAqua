@@ -238,7 +238,7 @@ div.infos {
 }
 
 @keyframes anim-1 {
-	0%, 8.3% { right: -100%; opacity: 0; }
+    0%, 8.3% { right: -100%; opacity: 0; }
   8.3%,25% { right: 0%; opacity: 1; }
   33.33%, 100% { right: 110%; opacity: 0; }
 }
