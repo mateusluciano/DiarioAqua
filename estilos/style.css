@@ -195,6 +195,11 @@ div#divContador {
     font-weight: 400;
     color: var(--cor007);
 }
+div#divContador > span {
+    font-size: 1.3em;
+    color: var(--cor003);
+    
+}
 
 
 /* --- SECTION 1 --- */
@@ -231,6 +236,16 @@ header > section#home > div.infos  p {
 
     margin-bottom: 10px;
 }
+
+#slide-container p.esquerda {
+    transform: translate(-100%);
+    transition-duration: 1.25s;
+}
+#slide-container p.direita {
+    transform: translate(100%);
+    transition-duration: 1.25;
+}
+ 
 
 /* Pagers */
 header > section#home > div.infos span {

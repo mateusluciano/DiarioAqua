@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aqua | Be Better</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <menu id="menu">
-        <div id="titmenu">
-            <h3>Menu</h3>
-            <span class="material-symbols-outlined" onclick="fecharmenu()">
-                close
-            </span>
-        </div>
-        <ul>
-            <li><a href="#">DICAS</a></li>
-            <li><a href="#">CALCULE</a></li>
-            <li><a href="#">GUIA PRÁTICO</a></li>
-        </ul>
-    </menu>
     <header>
+        <menu id="menu">
+            <div id="titmenu">
+                <h3>Menu</h3>
+                <span class="material-symbols-outlined" onclick="fecharmenu()">
+                    close
+                </span>
+            </div>
+            <ul>
+                <li><a href="#">DICAS</a></li>
+                <li><a href="#">CALCULE</a></li>
+                <li><a href="#">GUIA PRÁTICO</a></li>
+            </ul>
+        </menu>
         <section id="header">
             <button class="extremidade" id="btmenu" onclick="abrirmenu()">
                 <span id="menu" class="material-symbols-outlined">
@@ -44,12 +44,12 @@
 
         </section>
         <section id="home">
-            <div class="infos">
+            <div class="infos" onload="abriu()">
                 <h1>BEBA + ÁGUA</h1>
                 <div id="slide-container">
-                    <p class="slide-text" id="t01">Mantenha-se hidratado: Dicas simples e eficazes para beber mais água todos os dias</p>
-                    <p class="slide-text" id="t02">Descubra a quantidade ideal de água para o seu corpo</p>
-                    <p class="slide-text" id="t03">Receba um guia prático de como atingir sua meta diária de hidratação</p>
+                    <p class="ativo" id="t01">Mantenha-se hidratado: Dicas simples e eficazes para beber mais água todos os dias</p>
+                    <p class="direita" id="t02">Descubra a quantidade ideal de água para o seu corpo</p>
+                    <p id="t03">Receba um guia prático de como atingir sua meta diária de hidratação</p>
                 </div>
                 <div class="pager">
                     <span class="pagerItem" id="p01"></span>
@@ -75,5 +75,6 @@
     </footer>
 
     <script src="menu.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>
