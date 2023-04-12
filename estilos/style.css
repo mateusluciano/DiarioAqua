@@ -214,12 +214,48 @@ section#home {
 /* -- Div FILHO -- */
 div.infos {
     flex-basis: 57%;
+    overflow: hidden;
 }
 
-/* -- Div Pai -- */
-div.sliders {
-    display: flex;
+/* Slides */
+#s01, #s02, #s03 {
+    position: relative;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
+
+#s01{
+	animation-name: anim-1;
+}
+
+#s02{
+	animation-name: anim-2;
+}
+
+#s03{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { right: -100%; opacity: 0; }
+  8.3%,25% { right: 0%; opacity: 1; }
+  33.33%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { right: -100%; opacity: 0; }
+  41.63%, 58.29% { right: 0%; opacity: 1; }
+  66.66%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { right: -100%; opacity: 0; }
+  74.96%, 91.62% { right: 0%; opacity: 1; }
+  100% { right: 110%; opacity: 0; }
+}
+
+
 
 /* H1 */
 header > section#home > div.infos > h1 {
@@ -228,7 +264,7 @@ header > section#home > div.infos > h1 {
     font-size: 3.1em;
     color: var(--cor001);
     line-height: 1em;
-
+    
     margin-bottom: 25px;
 }
 
@@ -277,21 +313,6 @@ header > section#home > div.infos button {
     font-variant: small-caps;
 }
 
-/* Slides */
-@keyframes slides {
-    0% {
-
-    }
-    50% {
-
-    }
-    100% {
-        
-    }
-}
-p#t02, p#t03, #b02, #b03 {
-    display: none;
-}
 
 
 
@@ -299,6 +320,7 @@ p#t02, p#t03, #b02, #b03 {
 div.imagem {
     height: 280px;
     width: 265px;
+    align-self: flex-center;
     
     flex-basis: 43%;
 
