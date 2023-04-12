@@ -216,6 +216,11 @@ div.infos {
     flex-basis: 57%;
 }
 
+/* -- Div Pai -- */
+div.sliders {
+    display: flex;
+}
+
 /* H1 */
 header > section#home > div.infos > h1 {
     font-family: var(--fonte02);
@@ -224,32 +229,27 @@ header > section#home > div.infos > h1 {
     color: var(--cor001);
     line-height: 1em;
 
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 /* Parágrafos */
+#slide-container {
+    overflow: hidden;
+}
 header > section#home > div.infos  p {
     font-family: var(--fonte01);
     font-size: 0.98em;
 
     color: var(--cor007);
 
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-#slide-container p.esquerda {
-    transform: translate(-100%);
-    transition-duration: 1.25s;
-}
-#slide-container p.direita {
-    transform: translate(100%);
-    transition-duration: 1.25;
-}
- 
 
-/* Pagers */
+
+/* 
+Pagers
 header > section#home > div.infos span {
-    display: inline-block;
     width: 10px;
     height: 10px;
     background-color: rgba(37, 208, 188, 0.45);
@@ -257,10 +257,12 @@ header > section#home > div.infos span {
     border-radius: 50%;
 }
 
-/* Pagers Ativos */
+Pagers Ativos
 header > section#home > div.infos span:active {
     background-color: rgba(37, 208, 188, 0.95);
 }
+*/
+
 
 /* Botões */
 header > section#home > div.infos button {
@@ -273,11 +275,20 @@ header > section#home > div.infos button {
     font-size: 1.25em;
     font-weight: 600;
     font-variant: small-caps;
-
-    margin-top: 10px;
 }
 
 /* Slides */
+@keyframes slides {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+        
+    }
+}
 p#t02, p#t03, #b02, #b03 {
     display: none;
 }
