@@ -11,10 +11,12 @@
 </head>
 <body>
     <menu id="menu">
-        <h3>Menu</h3>
-        <span class="material-symbols-outlined">
-            close
-        </span>
+        <div id="titmenu">
+            <h3>Menu</h3>
+            <span class="material-symbols-outlined" onclick="fecharmenu()">
+                close
+            </span>
+        </div>
         <ul>
             <li><a href="#">DICAS</a></li>
             <li><a href="#">CALCULE</a></li>
@@ -23,7 +25,7 @@
     </menu>
     <header>
         <section id="header">
-            <button class="extremidade" id="btmenu" onclick="abrirmenu">
+            <button class="extremidade" id="btmenu" onclick="abrirmenu()">
                 <span id="menu" class="material-symbols-outlined">
                     menu
                 </span>

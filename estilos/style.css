@@ -51,6 +51,7 @@ section#header {
     column-gap: 30px;
 
     margin-bottom: 60px;
+    margin-left: -10px;
 }
 
 /* Botão Menu */
@@ -59,18 +60,23 @@ button#btmenu {
     -webkit-text-stroke: 0.2px var(--cor003);
     color: var(--cor003);
     background-color: transparent;
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
 }
 button#btmenu:hover {
-    background-color: var(--cor002);
-    color: white;
+    background-color: var(--cor005);
     border-radius: 9px;
-    transition-duration: 0.85s;
+    transition-duration: 0.45s;
+}
+button#btmenu:active {
+    background-color: var(--cor003);
+    color: var(--cor005);
+    -webkit-text-stroke: 0.2px var(--cor005);
+    transition-duration: 0.15s;
 }
 
 menu#menu {
-    display: block;
+    display: none;
     position: fixed; /* ou absolute */
     top: 10px;
     left: 0;
@@ -84,15 +90,49 @@ menu#menu {
     color: var(--cor007);
     list-style-type: none;
 }
+
+/* Menu Aberto */
+menu > div#titmenu {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+menu > div#titmenu > h3 {
+    
+}
 menu h3 {
-    margin: 20px 0px;
+/*     margin: 20px 0px; */
 
     font-family: var(--fonte01);
     font-weight: 700;
     font-size: 1.35em;
-    color: var(--cor007);
+    color: var(--cor003);
     
-    text-align: center;
+    padding: 15px;
+/*     text-align: center; */
+}
+menu > div#titmenu > span {
+    margin: 5px;
+    padding: 10px;
+
+    font-weight: bold;
+    color: var(--cor007);
+}
+menu > div#titmenu > span:hover {
+    margin: 10px;
+    padding: 5px;
+
+    background-color: var(--cor002);   
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+menu > div#titmenu > span:active {
+    background-color: var(--cor006);
+    color: var(--cor003);
 }
 menu > ul {
     list-style-type: none;
@@ -107,7 +147,7 @@ menu > ul > li {
     border-radius: 50px;
 
     background-color: var(--cor002);
-    padding: 5px 15px;
+    padding: 3px 15px;
     margin: 10px 0px;
     
     margin: 10px auto;
@@ -115,6 +155,8 @@ menu > ul > li {
 menu > ul > li:hover {
     background-color: var(--cor003);
     cursor: pointer;
+
+    transition-duration: 0.5s;
 }
 menu > ul > li:active {
     background-color: var(--cor006);
@@ -125,7 +167,7 @@ menu > ul > li > a {
     font-weight: 500;
     text-decoration: none;
     color: white;
-    font-size: 0.95em;
+    font-size: 0.92em;
     font-variant: small-caps;
 }
 
