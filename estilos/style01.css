@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: 'Montserrat', Tahoma, sans-serif;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+  --cor001: #008BF5; /* Azul */
+  --cor002: #1B998B; /* Verde Mediano*/
+  --cor003: #084C61; /* Verde Escuro */
+  --cor004: #172A3A; /* Azul Escuro*/
+  --cor005: #E2DADB; /* Giz */
+  --cor006: #25D0BC; /* Verde Claro */
+  --cor007: #39393A; /* Cinza Escuro */
+  --cor008: #FF6B35; /* Laranja - Terciária */
+  --cor009: #D6C108; /* Amarelo - Terciária */
+
+  --fonte01: 'Montserrat', Tahoma, sans-serif;
+  --fonte02: 'Roboto Condensed', 'Montserrat', Tahoma, sans-serif;
+}
+
+html {
+    background-color: #DDF2F1;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: block;
+    margin: 20px 10px 20px 10px;
+    padding: 30px 20px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 0px 11.33px rgba(0, 0, 0, 0.10);
+}
+
+
+
+/* --- HEADER --- */
+section#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    align-content: center;
+    column-gap: 30px;
+
+    margin-bottom: 60px;
+    margin-left: -10px;
+}
+
+/* Botão Menu */
+button#btmenu {
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px var(--cor003);
+    color: var(--cor003);
+    background-color: transparent;
+    padding: 10px;
+    margin: 0px;
+}
+button#btmenu:hover {
+    background-color: var(--cor005);
+    border-radius: 9px;
+    transition-duration: 0.45s;
+}
+button#btmenu:active {
+    background-color: var(--cor003);
+    color: var(--cor005);
+    -webkit-text-stroke: 0.2px var(--cor005);
+    transition-duration: 0.15s;
+}
+
+menu#menu {
+    display: none;
+    position: fixed; /* ou absolute */
+    top: 10px;
+    left: 0;
+    width: 60%;
+    height: 95%;
+    z-index: 9999;
+    background-color: var(--cor005);
+
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.15);
+    color: var(--cor007);
+    list-style-type: none;
+}
+
+/* Menu Aberto */
+menu > div#titmenu {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+menu > div#titmenu > h3 {
+    
+}
+menu h3 {
+/*     margin: 20px 0px; */
+
+    font-family: var(--fonte01);
+    font-weight: 700;
+    font-size: 1.35em;
+    color: var(--cor003);
+    
+    padding: 15px;
+/*     text-align: center; */
+}
+menu > div#titmenu > span {
+    margin: 5px;
+    padding: 10px;
+
+    font-weight: bold;
+    color: var(--cor007);
+}
+menu > div#titmenu > span:hover {
+    margin: 10px;
+    padding: 5px;
+
+    background-color: var(--cor002);   
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+menu > div#titmenu > span:active {
+    background-color: var(--cor006);
+    color: var(--cor003);
+}
+menu > ul {
+    list-style-type: none;
+    line-height: 2em;
+    
+    padding: 0px;
+}
+menu > ul > li {
+    text-align: center;
+    
+    max-width: 80%;
+    border-radius: 50px;
+
+    background-color: var(--cor002);
+    padding: 3px 15px;
+    margin: 10px 0px;
+    
+    margin: 10px auto;
+}
+menu > ul > li:hover {
+    background-color: var(--cor003);
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+menu > ul > li:active {
+    background-color: var(--cor006);
+}
+menu > ul > li > a {
+    text-decoration: none;
+    font-family: var(--fonte01);
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 0.92em;
+    font-variant: small-caps;
+}
+
+/* Logo */
+div#central {
+    width: 120px;
+    height: 34px;
+
+    background-image: url(../imagens/Aqua\ Logo\ 200px.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Contador Direito */
+div#divContador {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 5px;
+
+    font-family: var(--fonte01);
+    font-size: 0.85em;
+    font-weight: 400;
+    color: var(--cor007);
+}
+div#divContador > span {
+    font-size: 1.3em;
+    color: var(--cor003);
+    
+}
+
+
+/* --- SECTION 1 --- */
+/* -- Seção Pai -- */
+section#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -- Div FILHO -- */
+div.infos {
+    flex-basis: 57%;
+    overflow: hidden;
+}
+
+/* H1 */
+header > section#home > div.infos > h1 {
+    font-family: var(--fonte02);
+    -webkit-text-stroke: 1.15px var(--cor001);
+    font-size: 3.25em;
+    color: var(--cor001);
+    line-height: 1em;
+    
+    margin-bottom: 25px;
+}
+
+/* Parágrafos */
+header > section#home > div.infos  p {
+    font-family: var(--fonte01);
+    font-size: 0.88em;
+
+    color: var(--cor007);
+
+    margin-bottom: 20px;
+}
+
+/* Botões */
+header > section#home > div.infos button {
+    padding: 5px 30px;
+    border-radius: 30px;
+    background-color: var(--cor001);
+
+    font-family: var(--fonte02);
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+/* -- DIV FILHO Imagem -- */
+div.imagem {
+    height: 280px;
+    width: 265px;
+    align-self: flex-center;
+    
+    flex-basis: 43%;
+
+    background-image: url(../imagens/matt/mattLight400px.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
