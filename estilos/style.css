@@ -29,7 +29,7 @@ html {
     width: 100vw;
 }
 
-header {
+header, .aba {
     display: block;
     margin: 20px 10px 20px 10px;
     padding: 30px 20px;
@@ -204,7 +204,7 @@ div#divContador > span {
 
 /* --- SECTION 1 --- */
 /* -- Seção Pai -- */
-section#home {
+section.inicio, section.aba {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -229,9 +229,9 @@ header > section#home > div.infos > h1 {
 }
 
 /* Parágrafos */
-header > section#home > div.infos  p {
+header > section#home > div.infos p, p.txt {
     font-family: var(--fonte01);
-    font-size: 0.88em;
+    font-size: 0.92em;
 
     color: var(--cor007);
 
@@ -239,7 +239,7 @@ header > section#home > div.infos  p {
 }
 
 /* Botões */
-header > section#home > div.infos button {
+header > section#home > div.infos button, button.home {
     padding: 5px 30px;
     border-radius: 30px;
     background-color: var(--cor001);
@@ -263,4 +263,59 @@ div.imagem {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+
+/*  -- SECTION MATT - Pai*/
+section#mat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DIV FILHA */
+div#imgmatt {
+    height: 230px;
+    width: 218px;
+    align-self: center;
+
+    flex-basis: 35%;
+
+    background-image: url(../imagens/matt/mattWaterLight400px.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+div#mattoi {
+    justify-self: flex-end;
+    text-align: right;
+    flex-basis: 60%;
+}
+h2 {
+    text-align: right;
+    font-size: 2.95em;
+    font-family: var(--fonte02);
+    -webkit-text-stroke: 1.25px var(--cor002);
+    color: var(--cor002);
+
+    margin-bottom: 20px;
+}
+p#oi {
+    font-size: 0.92em;
+    text-align: right;
+}
+#b02 {
+    font-size: 0.89em;
+    background-color: var(--cor002);
+}
+
+/* -- DICAS ABA2 -- */
+.aba2 {
+    display: block;
+    margin: 20px 10px 20px 10px;
+    padding: 30px 20px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 0px 11.33px rgba(0, 0, 0, 0.10);
 }
