@@ -217,11 +217,51 @@ div.infos {
     overflow: hidden;
 }
 
+/* Slides */
+#s01, #s02, #s03 {
+    position: relative;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#s01{
+	animation-name: anim-1;
+}
+
+#s02{
+	animation-name: anim-2;
+}
+
+#s03{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+    0%, 8.3% { right: -100%; opacity: 0; }
+  8.3%,25% { right: 0%; opacity: 1; }
+  33.33%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { right: -100%; opacity: 0; }
+  41.63%, 58.29% { right: 0%; opacity: 1; }
+  66.66%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { right: -100%; opacity: 0; }
+  74.96%, 91.62% { right: 0%; opacity: 1; }
+  100% { right: 110%; opacity: 0; }
+}
+
+
+
 /* H1 */
 header > section#home > div.infos > h1 {
     font-family: var(--fonte02);
     -webkit-text-stroke: 1.15px var(--cor001);
-    font-size: 3.25em;
+    font-size: 3.1em;
     color: var(--cor001);
     line-height: 1em;
     
@@ -229,14 +269,36 @@ header > section#home > div.infos > h1 {
 }
 
 /* Parágrafos */
+#slide-container {
+    overflow: hidden;
+}
 header > section#home > div.infos  p {
     font-family: var(--fonte01);
-    font-size: 0.88em;
+    font-size: 0.98em;
 
     color: var(--cor007);
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
+
+
+/* 
+Pagers
+header > section#home > div.infos span {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(37, 208, 188, 0.45);
+    margin: 0px 3px;
+    border-radius: 50%;
+}
+
+Pagers Ativos
+header > section#home > div.infos span:active {
+    background-color: rgba(37, 208, 188, 0.95);
+}
+*/
+
 
 /* Botões */
 header > section#home > div.infos button {
@@ -250,6 +312,9 @@ header > section#home > div.infos button {
     font-weight: 600;
     font-variant: small-caps;
 }
+
+
+
 
 /* -- DIV FILHO Imagem -- */
 div.imagem {
