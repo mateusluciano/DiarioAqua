@@ -130,7 +130,7 @@
                 <p class="txt" id="txtCalcula">Veja abaixo quantos litros de água tu precisa beber diariamente:</p>
             </div>
 
-            <div class="questRadios">
+            <div id="questRadios">
                 <div id="clima">
                     <Label for="clima">Clima Habitual</Label>
                     <button class="tooltip" title="Marque a opção que melhor descreve a temperatura média do ambiente no seu dia a dia!">?</button>
@@ -158,7 +158,7 @@
 
             <hr>
 
-            <div class="questSlider">
+            <div id="questSlider">
                 <input type="number" name="peso" id="pesoSlide" min="0" max="250" step="0.1" value="60"><p id="quilo">kg</p>
                 <label for="peso">Peso Atual</label>
 
@@ -166,17 +166,55 @@
 
             <hr>
 
-            <h4>Sua meta é de <p id="litros">2</p>litros d'água</h4>
+            <h5>Sua meta é de <p id="litros">2</p>litros d'água</h5>
 
             <div id="calculado">
                 <p>beba 4 garrafas de 500<small>ml</small></p>
             </div>
         </section>
+
+        <section class="aba2" id="guia">
+            <div class="infos">
+                <h3>Guia Prático</h3>
+                <p class="txt" id="txtGuia">Acesse agora nosso guia e veja como alcançar sua meta diária de hidratação:</p>
+            </div>
+
+            <div class="barra-de-regressao">
+                <p class="downloads-restantes">Restantes: 100</p>
+            </div>
+
+            <div id="formDownload">
+                <form action="download.php" method="post" autocomplete="on">
+                    <label for="nome" class="down">Nome Completo</label>
+                    <input type="text" name="nome" id="nomeDown" required minlength="6" placeholder="Nome completo"> 
+
+                    <label for="birth" class="down">Data de Nascimento</label>
+                    <input type="date" name="birth" id="niver" required max="2005-01-01">
+
+                    <label for="what" class="down">WhatsApp</label>
+                    <input type="tel" name="what" id="whatsapp" required minlength="11" maxlength="11" placeholder="WhatsApp">
+
+                    <label for="min" class="down">Você bebe o mínimo de 2 litros diariamente?</label>
+                    <input type="radio" name="min" id="minimoSim" checked>
+                    <input type="radio" name="min" id="minimoNao">
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="aba2">
+            <div id="imgSentado"></div>
+            <div class="info">
+                <h6>obrigadu!</h6>
+                <p>Siga nosso Instagram!</p>
+                <p>Entre em contato conosco por e-mail!</p>
+                
+                <button id="email"><a href="#email"></a></button>
+                <button id="instagram"><a href="#instagram"></a></button>
+            </div>
+        </div>
     </footer>
-
+    <div id="space"></div>
     <script src="menu.js"></script>
 </body>
 </html>
