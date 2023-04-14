@@ -124,8 +124,53 @@
             </div>
         </section>
 
-        <section class="aba2" id="calcule">
-            
+        <section class="aba2" id="calcula">
+            <div class="infos" id="introCalcula">
+                <h2>Calcule</h2>
+                <p class="txt" id="txtCalcula">Veja abaixo quantos litros de água tu precisa beber diariamente:</p>
+            </div>
+
+            <div class="questRadios">
+                <div id="clima">
+                    <Label for="clima">Clima Habitual</Label>
+                    <button class="tooltip" title="Marque a opção que melhor descreve a temperatura média do ambiente no seu dia a dia!">?</button>
+
+                    <input type="radio" name="clima" id="climaRadio28" checked>
+                    <input type="radio" name="clima" id="climaRadio29">
+                </div>
+
+                <div id="atividades">
+                    <label for="atividade">Atividades Físicas</label>
+                    <button class="tooltip" title="Marque a opção que melhor descreve sua rotina em relação à prática de atividades físicas: se você se exercita regularmente ou se ainda não incorporou exercícios em sua rotina diária.">?</button>
+
+                    <input type="radio" name="atividade" id="habitualRadio" checked>
+                    <input type="radio" name="atividade" id="sedentRadio">
+                </div>
+
+                <div id="obstinado">
+                    <label for="foco">Modo Obstinado</label>
+                    <button class="tooltip" title="Modo obstinado é indicado para quem já atinge o mínimo de 2 litros diários e quer intensificar a hidratação!">?</button>
+
+                    <input type="radio" name="foco" id="ativoRadio" checked>
+                    <input type="radio" name="foco" id="desativadoRadio">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="questSlider">
+                <input type="number" name="peso" id="pesoSlide" min="0" max="250" step="0.1" value="60"><p id="quilo">kg</p>
+                <label for="peso">Peso Atual</label>
+
+            </div>
+
+            <hr>
+
+            <h4>Sua meta é de <p id="litros">2</p>litros d'água</h4>
+
+            <div id="calculado">
+                <p>beba 4 garrafas de 500<small>ml</small></p>
+            </div>
         </section>
     </main>
     <footer>
