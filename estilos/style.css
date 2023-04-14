@@ -385,6 +385,9 @@ div#area-deslizante {
     
     white-space: normal;
 }
+#conteudo03 {
+    margin: 15px 10px 10px 10px;
+}
 
 /* IMAGENS - Dicas */
 .imgDicasConfig {
