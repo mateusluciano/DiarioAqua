@@ -327,6 +327,7 @@ p#oi {
 
 
 /* DICAS */
+/* Intro */
 div#introDicas {
     margin-bottom: 20px;
 }
@@ -334,18 +335,21 @@ div#introDicas > h2 {
     text-align: left;
     line-height: 0.92em;
     font-size: 3.3em;
+    color: var(--cor001);
 
     margin-bottom: -30px;
 }
 div#introSup {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     align-items: flex-end;
 }
 div#introSup > p {
-    flex-basis: 65%;}
+    flex-basis: 60%;
+    font-size: 0.845em;
+}
 div#imgSq  {
     width: 126px;
     height: 110px;
@@ -356,3 +360,4 @@ div#imgSq  {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
