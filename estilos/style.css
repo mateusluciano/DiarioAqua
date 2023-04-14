@@ -334,8 +334,10 @@ div#introDicas {
 div#introDicas > h2 {
     text-align: left;
     line-height: 0.92em;
-    font-size: 3.3em;
+    font-size: 3em;
+
     color: var(--cor001);
+    -webkit-text-stroke: 0.85px var(--cor001);
 
     margin-bottom: -40px;
 }
@@ -367,17 +369,21 @@ div#area-deslizante {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+
+    display: flex;
 }
 .conteudoDicas {
     display: inline-block;
-    width: 200px;
-    height: 310px;
+    width: 204px;
+    height: 350px;
 
     background-color: rgba(226, 218, 219, 0.45);
     border-radius: 15px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.150);
-    padding: 10px;
+    padding: 12px;
     margin: 15px 30px 10px 10px;
+    
+    white-space: normal;
 }
 
 /* IMAGENS - Dicas */
@@ -433,6 +439,6 @@ h3.maior {
     margin-top: -8px;
     margin-bottom: 10px;
 }
-p.pDicas {
-
+div.details {
+    
 }
