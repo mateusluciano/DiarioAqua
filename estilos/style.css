@@ -388,32 +388,51 @@ div#imgGelo {
     width: 180px;
     height: 170px;
 
-    background-image: url(../imagens/gelo215px.png);
+    background-image: url(../imagens/gelo430px.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 div#imgTimer {
     width: 180px;
     height: 170px;
 
-    background-image: url(../imagens/timer210px.png);
+    background-image: url(../imagens/timer420px.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 div#imgSqueezes {
     width: 180px;
     height: 170px;
 
-    background-image: url(../imagens/squeeze430px.png);
+    background-image: url(../imagens/squeeze420px.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 /* TÍTULOS E PARÁGRAFOS - Dicas */
 /* Configurações */
 h3.menor {
+    font-variant: small-caps;
+    color: var(--cor001);
+
+    font-size: 1.35em;
+    font-family: var(--fonte01);
+
+    margin-top: 10px;
+}
+h3.maior {
+    color: var(--cor002);
     
+    font-family: var(--fonte02);
+    font-size: 2.2em;
+    -webkit-text-stroke: 1px var(--cor002);
+
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+p.pDicas {
+
 }
