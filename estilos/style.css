@@ -337,7 +337,7 @@ div#introDicas > h2 {
     font-size: 3.3em;
     color: var(--cor001);
 
-    margin-bottom: -30px;
+    margin-bottom: -40px;
 }
 div#introSup {
     display: flex;
@@ -373,9 +373,17 @@ div#area-deslizante {
     width: 200px;
     height: 310px;
 
-    background-color: var(--cor005);
+    background-color: rgba(226, 218, 219, 0.45);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.150);
+    padding: 10px;
+    margin: 15px 30px 10px 10px;
 }
-/* Imagens - Dicas */
+
+/* IMAGENS - Dicas */
+.imgDicasConfig {
+    border-radius: 15px;
+}
 div#imgGelo {
     width: 180px;
     height: 170px;
@@ -385,21 +393,27 @@ div#imgGelo {
     background-repeat: no-repeat;
     background-size: contain;
 }
-div#Timer {
+div#imgTimer {
     width: 180px;
     height: 170px;
 
-    background-image: url(../imagens/gelo215px.png);
+    background-image: url(../imagens/timer210px.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-div#Squeezes {
+div#imgSqueezes {
     width: 180px;
     height: 170px;
 
-    background-image: url(../imagens/gelo215px.png);
+    background-image: url(../imagens/squeezes210px.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* TÍTULOS E PARÁGRAFOS - Dicas */
+/* Configurações */
+h3.menor {
+    
 }
