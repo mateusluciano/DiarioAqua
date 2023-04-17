@@ -72,6 +72,7 @@
             <div class="imagem"></div>
         </section>
     </header>
+
     <main>
         <section class="aba" id="matt">
             <div id="imgmatt"></div>
@@ -132,15 +133,19 @@
 
             <div id="questRadios">
                 <div id="clima">
-                    <Label for="clima">Clima Habitual</Label>
+                    <p>Clima Habitual</p>
                     <button class="tooltip" title="Marque a opção que melhor descreve a temperatura média do ambiente no seu dia a dia!">?</button>
 
-                    <input type="radio" name="clima" id="climaRadio28" checked>
-                    <input type="radio" name="clima" id="climaRadio29">
+                    <label>
+                        <input type="radio" name="clima" id="climaRadio28" value="-28°c" checked> -28°c
+                    </label>
+                    <label for="climaQuente">
+                        <input type="radio" name="clima" id="climaRadio29" value="+28°c"> +28°c
+                    </label>
                 </div>
 
                 <div id="atividades">
-                    <label for="atividade">Atividades Físicas</label>
+                    <p for="atividade">Atividades Físicas</p>
                     <button class="tooltip" title="Marque a opção que melhor descreve sua rotina em relação à prática de atividades físicas: se você se exercita regularmente ou se ainda não incorporou exercícios em sua rotina diária.">?</button>
 
                     <input type="radio" name="atividade" id="habitualRadio" checked>
@@ -148,7 +153,7 @@
                 </div>
 
                 <div id="obstinado">
-                    <label for="foco">Modo Obstinado</label>
+                    <p for="foco">Modo Obstinado</p>
                     <button class="tooltip" title="Modo obstinado é indicado para quem já atinge o mínimo de 2 litros diários e quer intensificar a hidratação!">?</button>
 
                     <input type="radio" name="foco" id="ativoRadio" checked>
@@ -203,6 +208,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="aba2">
             <div id="imgSentado"></div>
@@ -216,6 +222,7 @@
             </div>
         </div>
     </footer>
+    
     <div id="space"></div>
     <script src="menu.js"></script>
 </body>

@@ -439,3 +439,14 @@ h3.maior {
     margin-top: -8px;
     margin-bottom: 10px;
 }
+
+/* CALCULA */
+section#calcula h2 {
+    color: var(--cor001);
+    text-align: left;
+    -webkit-text-stroke: 0.85px var(--cor001);
+}
+
+div#introCalcula > p {
+    width: 58%;
+}
