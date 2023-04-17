@@ -445,8 +445,115 @@ section#calcula h2 {
     color: var(--cor001);
     text-align: left;
     -webkit-text-stroke: 0.85px var(--cor001);
+    margin-bottom: 15px;
 }
 
 div#introCalcula > p {
     width: 58%;
+    margin-bottom: 15px;
 }
+
+.divInput {
+    margin: 20px 0px;
+}
+div.titulosInputs {
+    display: flex;
+    align-items: center;
+
+
+    margin-bottom: 5px;
+}
+.inputs {
+    font-family: var(--fonte01);
+    font-weight: 600;
+    color: var(--cor001);
+}
+button.tooltip {
+    border-radius: 50%;
+    font-size: 0.69em;
+    font-weight: 600;
+    color: var(--cor005);
+    background-color: var(--cor007);
+    padding: 1px 4.5px;
+
+    margin-left: 5px;
+}
+.primeiroRadio {
+    display: flex;
+    width: 70%;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+input[type="radio"] {
+     /* oculta o botão de opção padrão */
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+
+     /* adiciona um novo estilo de botão */
+     border: 2px solid var(--cor002);border-radius: 50%;
+     width: 14px;
+     height: 14px;
+     display: inline-block;
+     position: relative;
+     margin-right: 8px;
+}
+input[type="radio"]:checked::before {
+    /* adiciona um ponto para indicar que a opção foi selecionada */
+    content: "\2022";
+    font-size: 50px;
+    line-height: 16px;
+    display: block;
+    position: absolute;
+    top: -6.457px;
+    left: -1.9px;
+    color: var(--cor003);
+    -webkit-text-stroke: 1.5px var(--cor003
+    );
+  }
+label {
+    font-family: var(--fonte01);
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+/* Estilizando a dica de ferramenta */
+button[title] {
+    position: relative;
+    /* adiciona um cursor de ponteiro quando o usuário passa o mouse sobre o link */
+    cursor: pointer;
+}
+  
+  /* Esconde o texto da dica de ferramenta padrão */
+button[title]:hover:before {
+    content: "";
+    display: none;
+}
+  
+  /* Mostra a dica de ferramenta personalizada */
+button[title]:hover:after {
+    /* Define a aparência da dica de ferramenta */
+    content: attr(title);
+    background-color: var(--cor007);
+    color: var(--cor005);
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9999;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    /* Define uma transição suave para a animação da dica de ferramenta */
+    transition: opacity 0.2s ease-in-out;
+    /* Define uma opacidade inicial de 0 para que a dica de ferramenta seja invisível até ser exibida */
+    opacity: 0;
+    width: 200px;
+}
+  
+  /* Animação da dica de ferramenta personalizada */
+button[title]:hover:after {
+    opacity: 1;
+}
+  

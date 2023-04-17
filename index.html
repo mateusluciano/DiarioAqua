@@ -132,32 +132,52 @@
             </div>
 
             <div id="questRadios">
-                <div id="clima">
-                    <p>Clima Habitual</p>
-                    <button class="tooltip" title="Marque a opção que melhor descreve a temperatura média do ambiente no seu dia a dia!">?</button>
+                <div class="divInput" id="clima">
+                    <div class="titulosInputs">
+                        <p class="inputs">Clima Habitual</p>
+                        <button class="tooltip" title="Marque a opção que melhor descreve a temperatura média do ambiente no seu dia a dia!">?</button>
+                    </div>
 
-                    <label>
-                        <input type="radio" name="clima" id="climaRadio28" value="-28°c" checked> -28°c
-                    </label>
-                    <label for="climaQuente">
-                        <input type="radio" name="clima" id="climaRadio29" value="+28°c"> +28°c
-                    </label>
+                    <div class="primeiroRadio">
+                        <label for="climaRadio28">
+                            <input  type="radio" name="clima" id="climaRadio28" value="-28°c" checked> -28°c
+                        </label>
+                        <label for="climaRadio29">
+                            <input type="radio" name="clima" id="climaRadio29" value="+28°c"> +28°c
+                        </label>
+                    </div>
                 </div>
 
-                <div id="atividades">
-                    <p for="atividade">Atividades Físicas</p>
-                    <button class="tooltip" title="Marque a opção que melhor descreve sua rotina em relação à prática de atividades físicas: se você se exercita regularmente ou se ainda não incorporou exercícios em sua rotina diária.">?</button>
+                <div class="divInput" id="atividades">
+                    <div class="titulosInputs">
+                        <p class="inputs">Atividades Físicas</p>
+                        <button class="tooltip" title="Marque a opção que melhor descreve sua rotina em relação à prática de atividades físicas: se você se exercita regularmente ou se ainda não incorporou exercícios em sua rotina diária.">?</button>
+                    </div>
 
-                    <input type="radio" name="atividade" id="habitualRadio" checked>
-                    <input type="radio" name="atividade" id="sedentRadio">
+                    <div class="primeiroRadio">
+                        <label for="habitualRadio">
+                            <input  type="radio" name="atividade" id="habitualRadio" value="habitual" checked> Habitual
+                        </label>
+                        <label for="sedentRadio">
+                            <input type="radio" name="atividade" id="sedentRadio" value="sedentario"> Sedentário
+                        </label>
+                    </div>
                 </div>
 
-                <div id="obstinado">
-                    <p for="foco">Modo Obstinado</p>
-                    <button class="tooltip" title="Modo obstinado é indicado para quem já atinge o mínimo de 2 litros diários e quer intensificar a hidratação!">?</button>
+                <div class="divInput" id="obstinado">
+                    <div class="titulosInputs">
+                        <p class="inputs">Modo Obstinado</p>
+                        <button class="tooltip" title="Modo obstinado é indicado para quem já atinge o mínimo de 2 litros diários e quer intensificar a hidratação!">?</button>
+                    </div>
 
-                    <input type="radio" name="foco" id="ativoRadio" checked>
-                    <input type="radio" name="foco" id="desativadoRadio">
+                    <div class="primeiroRadio">
+                        <label for="ativoRadio">
+                            <input  type="radio" name="foco" id="ativoRadio" value="ativo" checked> Ativo
+                        </label>
+                        <label for="desativadoRadio">
+                            <input type="radio" name="foco" id="desativadoRadio" value="desativado"> Desativado
+                        </label>
+                    </div>
                 </div>
             </div>
 
