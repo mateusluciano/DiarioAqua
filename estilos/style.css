@@ -515,17 +515,15 @@ input[type="radio"]:checked::before {
     );
   }
 label {
-    font-family: var(--fonte01);
-    font-weight: 500;
-    font-size: 0.9em;
-}
-
-
-.primeiroRadio > label {
     display: flex;
     align-items: center;
 
     column-gap: 5px;
+
+    font-family: var(--fonte01);
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--cor007);
 }
 
 
@@ -574,15 +572,97 @@ button[title]:hover:before {
 
 
 /* SLIDE - Peso */
+div#questSlider {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 input[type="number"] {
+    width: 50px;
+    max-width: 100px;
+
     font-size: 2.25em;
     font-family: var(--fonte01);
     font-weight: 700;
     color: var(--cor001);
-
-    display: inline-block;
 }
-div#questSlider {
-    display: flex;
+p#quilo {
+    font-family: var(--fonte01);
+    font-weight: 700;
+    color: var(--cor007);
+}
+
+#pesoAtual {
+    font-family: var(--fonte01);
+    font-weight: 700;
+    font-size: 0.8em;
+    color: var(--cor001);
+    font-variant: small-caps;
+
+    margin: -5px 0px 5px 0px;
 }
   
+
+
+/* SLIDE */
+/* Estilização para o input de tipo range */
+input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador (apenas para navegadores Webkit) */
+    width: 100%; /* Define a largura do controle para preencher o contêiner pai */
+    height: 10px; /* Define a altura do controle */
+    background-color: var(--cor005); /* Define a cor de fundo da pista */
+    border-radius: 5px; /* Define o raio do canto para a pista */
+    outline: none; /* Remove a borda de foco */
+
+    margin-bottom: 10px;
+  }
+  
+  /* Estilização para o polegar do input de tipo range */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador (apenas para navegadores Webkit) */
+    width: 20px; /* Define a largura do polegar */
+    height: 20px; /* Define a altura do polegar */
+    background-color: var(--cor002); /* Define a cor de fundo do polegar */
+    border-radius: 50%; /* Define o raio do canto para o polegar para torná-lo circular */
+    cursor: pointer; /* Altera o cursor para uma mão quando o mouse estiver sobre o polegar */
+  }
+  
+  /* Estilização para a pista do input de tipo range quando o mouse está sobre ela */
+  input[type="range"]:hover {
+    background-color: #e0e0e0; /* Define a cor de fundo da pista quando o mouse está sobre ela */
+  }
+  
+  /* Estilização para a pista do input de tipo range quando está ativo (clicado) */
+  input[type="range"]:active {
+    background-color: #d0d0d0; /* Define a cor de fundo da pista quando está ativo */
+  }
+  
+  
+
+  hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--cor005);
+
+    margin: 10px 0px;
+    border-radius: 50px;
+  }
+
+  #divLitros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h5 {
+    text-align: center;
+    font-family: var(--fonte01);
+    font-size: 1.3em;
+    color: #25D0BC;
+
+    margin: 20px 0px;
+  }

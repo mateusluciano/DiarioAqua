@@ -172,10 +172,10 @@
 
                     <div class="primeiroRadio">
                         <label for="ativoRadio">
-                            <input  type="radio" name="foco" id="ativoRadio" value="ativo" checked> Ativo
+                            <input  type="radio" name="foco" id="ativoRadio" value="ativo"> Ativo
                         </label>
                         <label for="desativadoRadio">
-                            <input type="radio" name="foco" id="desativadoRadio" value="desativado"> Desativado
+                            <input type="radio" name="foco" id="desativadoRadio" value="desativado" checked> Desativado
                         </label>
                     </div>
                 </div>
@@ -184,15 +184,19 @@
             <hr>
 
             <div id="questSlider">
-                <input type="number" name="peso" id="pesoInput" min="0" max="600" step="0.1" value="60"><p id="quilo">kg</p>
+                <input type="number" name="peso" class="no-spinners" id="pesoInput" min="30" max="600" step="0.1" value="60"><p id="quilo">kg</p>
                 
             </div>
-            <label for="peso">Peso Atual</label>
-            <input type="range" name="number" id="pesoSlide" min="0" max="250" step="0.1" value="60">
+            <label id="pesoAtual" for="peso">PESO ATUAL</label>
+
+
+            <input type="range" name="number" id="pesoSlide" min="30" max="250" step="0.1" value="60.0">
 
             <hr>
 
-            <h5>Sua meta é de <p id="litros">2</p>litros d'água</h5>
+            <div id="divLitros">
+                <h5>Sua meta é de 2 litros d'água!</h5>
+            </div>
 
             <div id="calculado">
                 <p>beba 4 garrafas de 500<small>ml</small></p>
@@ -245,6 +249,8 @@
     </footer>
     
     <div id="space"></div>
-    <script src="menu.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/number.js"></script>
+    <script src="/js/inputsJuntos.js"></script>
 </body>
 </html>
