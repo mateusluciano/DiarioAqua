@@ -198,8 +198,11 @@
                 <h5>Sua meta é de 2 litros d'água!</h5>
             </div>
 
-            <div id="calculado">
-                <p>beba 4 garrafas de 500<small>ml</small></p>
+
+            <div id="garrafas">
+                <div id="calculado">
+                    <p>beba 4 garrafas de 500<small>ml</small></p>
+                </div>
             </div>
         </section>
 
@@ -210,8 +213,11 @@
             </div>
 
             <div class="barra-de-regressao">
-                <p class="downloads-restantes">Restantes: 100</p>
+                <div class="regresso">
+                    <p class="downloads-restantes">RESTANTES: 100 UNIDADES</p>
+                </div>
             </div>
+            
 
             <div id="formDownload">
                 <form action="download.php" method="post" autocomplete="on">
@@ -228,7 +234,7 @@
                     <input type="radio" name="min" id="minimoSim" checked>
                     <input type="radio" name="min" id="minimoNao">
 
-                    <input type="submit" value="Receber Guia Prático">
+                    <button onclick="atualizarBarraDeRegressao()">Receber Guia</button>
                 </form>
             </div>
         </section>
@@ -252,5 +258,7 @@
     <script src="/js/menu.js"></script>
     <script src="/js/number.js"></script>
     <script src="/js/inputsJuntos.js"></script>
+    <script src="js/barraRestante.js"></script>
+
 </body>
 </html>
