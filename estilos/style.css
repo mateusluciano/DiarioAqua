@@ -739,8 +739,85 @@ div.infos > h3 {
 }
 .downloads-restantes {
     font-size: 0.55em;
-    color: var(--cor005);
+    color: #fff;
     font-family: var(--fonte01);
     font-weight: 600;
     font-variant: small-caps;
-  }
+}
+
+
+#acesse {
+    font-family: var(--fonte02);
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
+
+    color: var(--cor002);
+    -webkit-text-stroke: 0.2px var(--cor002);
+
+    margin-top: -10px;
+}
+
+
+/* FORMS */
+label.down {
+    display: block;
+
+    font-family: var(--fonte01);
+    font-weight: 500;
+    color: var(--cor003);
+    font-size: 0.75em;
+
+    margin-top: 10px;
+}
+
+input.formInput {
+    width: 100%;
+
+    font-family: var(--fonte01);
+    font-size: 0.85em;
+    padding: 10px 15px;
+    color: var(--cor007);
+    background-color: var(--cor005);
+    border-radius: 50px;
+
+    margin: 5px 0px;
+}
+input.formInput:focus {
+    background-color: #fafafa;
+}
+
+div.minimoDiario {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 30px;
+    margin: 5px 0px;
+}
+
+div.bt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#downLoad {
+    display: block;
+    border-radius: 50px;
+    padding: 10px 25px;
+    background-color: var(--cor002);
+
+    margin-top: 15px;
+    
+    color: #fff;
+    font-family: var(--fonte01);
+    font-weight: 600;
+    font-size: 1em;
+}
+button#downLoad:hover {
+    background-color: var(--cor006);
+    cursor: pointer;
+}
+button#downLoad:active {
+    background-color: var(--cor003);
+}

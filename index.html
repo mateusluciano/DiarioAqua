@@ -140,10 +140,10 @@
 
                     <div class="primeiroRadio">
                         <label for="climaRadio28">
-                            <input  type="radio" name="clima" id="climaRadio28" value="-28°c" checked> -28°c
+                            <input  type="radio" name="clima" id="climaRadio28" value="-28°c"> -28°c
                         </label>
                         <label for="climaRadio29">
-                            <input type="radio" name="clima" id="climaRadio29" value="+28°c"> +28°c
+                            <input type="radio" name="clima" id="climaRadio29" value="+28°c" checked> +28°c
                         </label>
                     </div>
                 </div>
@@ -156,10 +156,10 @@
 
                     <div class="primeiroRadio">
                         <label for="habitualRadio">
-                            <input  type="radio" name="atividade" id="habitualRadio" value="habitual" checked> Habitual
+                            <input  type="radio" name="atividade" id="habitualRadio" value="habitual"> Habitual
                         </label>
                         <label for="sedentRadio">
-                            <input type="radio" name="atividade" id="sedentRadio" value="sedentario"> Sedentário
+                            <input type="radio" name="atividade" id="sedentRadio" value="sedentario" checked> Sedentário
                         </label>
                     </div>
                 </div>
@@ -218,23 +218,32 @@
                 </div>
             </div>
             
+            <p id="acesse">acesse agora:</p>
 
             <div id="formDownload">
                 <form action="download.php" method="post" autocomplete="on">
                     <label for="nome" class="down">Nome Completo</label>
-                    <input type="text" name="nome" id="nomeDown" required minlength="6" placeholder="Nome completo"> 
+                    <input class="formInput" type="text" name="nome" id="nomeDown" required minlength="6" placeholder="Seu nome aqui :&#41;"> 
 
                     <label for="birth" class="down">Data de Nascimento</label>
-                    <input type="date" name="birth" id="niver" required max="2005-01-01">
+                    <input class="formInput" type="date" name="birth" id="niver" required max="2005-01-01">
 
                     <label for="what" class="down">WhatsApp</label>
-                    <input type="tel" name="what" id="whatsapp" required minlength="11" maxlength="11" placeholder="WhatsApp">
+                    <input class="formInput" type="tel" name="what" id="whatsapp" required placeholder="(00) 00000-0000" oninput="formatarTelefone()">
 
                     <label for="min" class="down">Você bebe o mínimo de 2 litros diariamente?</label>
-                    <input type="radio" name="min" id="minimoSim" checked>
-                    <input type="radio" name="min" id="minimoNao">
+                    <div class="minimoDiario">
+                        <label for="bebeMinimo">
+                            <input  type="radio" name="min" id="minSim" value="Sim"> Sim
+                        </label>
+                        <label for="bebeMinimoN">
+                            <input  type="radio" name="min" id="minNao" value="Nao" checked> Não
+                        </label>
+                    </div>
 
-                    <button onclick="atualizarBarraDeRegressao()">Receber Guia</button>
+                    <div class="bt">
+                        <button onclick="atualizarBarraDeRegressao()" id="downLoad">ACESSAR E-BOOK</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -259,6 +268,6 @@
     <script src="/js/number.js"></script>
     <script src="/js/inputsJuntos.js"></script>
     <script src="js/barraRestante.js"></script>
-
+    <script src="js/formatoTel.js"></script>
 </body>
 </html>
