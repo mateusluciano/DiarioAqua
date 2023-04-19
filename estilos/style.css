@@ -18,6 +18,7 @@
   --cor007: #39393A; /* Cinza Escuro */
   --cor008: #FF6B35; /* Laranja - Terciária */
   --cor009: #D6C108; /* Amarelo - Terciária */
+  --cor010: #4cb1ff;
 
   --fonte01: 'Montserrat', Tahoma, sans-serif;
   --fonte02: 'Roboto Condensed', 'Montserrat', Tahoma, sans-serif;
@@ -508,10 +509,10 @@ input[type="radio"]:checked::before {
     line-height: 16px;
     display: block;
     position: absolute;
-    top: -6.75px;
+    top: -6.55px;
     left: -1.9px;
     color: var(--cor003);
-    -webkit-text-stroke: 1.5px var(--cor003
+    -webkit-text-stroke: 2.15px var(--cor003
     );
   }
 label {
