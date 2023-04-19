@@ -831,11 +831,15 @@ footer > div.aba {
 }
 #imgSentado {
     width: 200px;    
-    height: 200px;
+    height: 150px;
     
     flex-basis: 55%;
 
+    background-image: url(../imagens/matt/MattSitting400px.png);
 
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 footer div.info {
     flex-basis: 45%;
@@ -849,35 +853,7 @@ h6 {
     -webkit-text-stroke: 1px var(--cor002);
     color: var(--cor002);
 }
-footer p {
-    margin: 10px 0px;
-}
 
-
-div.btSocial {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    column-gap: 15px;
-}
-#email {
-    height: 30px;
-    width: 30px;
-    background-image: url(../imagens/emailLogo.png);
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-#instagram {
-    height: 30px;
-    width: 30px;
-    background-image: url(../imagens/instagramLogo.png);
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 #space {
-    height: 100px;
+    height: 1px;
 }
