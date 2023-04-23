@@ -95,6 +95,8 @@ menu#menu {
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.15);
     color: var(--cor007);
     list-style-type: none;
+
+    transform: translateX(-100%);
 }
 
 /* Menu Aberto */
