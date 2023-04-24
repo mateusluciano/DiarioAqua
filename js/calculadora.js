@@ -64,7 +64,7 @@ function calcularMetaAgua() {
     metaAguaView.innerHTML = `Sua meta é de 2 litros<br>de água por dia!`;
 
     var garrafa2l = document.querySelector('#garrafas');
-    garrafa2l.style.backgroundImage = 'url(imagens/water/Bottles2l.png)';
+    garrafa2l.style.backgroundImage = 'url(imagens/water/2litros.png)';
 
     var fraseGarrafas = document.querySelector('#squee')
     fraseGarrafas.innerHTML = `beba 4 garrafas de 500<small>ml</small>`
