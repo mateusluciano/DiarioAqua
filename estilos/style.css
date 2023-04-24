@@ -244,8 +244,10 @@ header > section#home > div.infos p, p.txt {
 }
 
 /* Botões */
-header > section#home > div.infos button, button.home {
-    padding: 5px 30px;
+header > section#home > div.infos button, a.home {
+    display: inline-block;
+
+    padding: 5px 20px;
     border-radius: 30px;
     background-color: var(--cor001);
 
@@ -254,6 +256,14 @@ header > section#home > div.infos button, button.home {
     font-size: 1.25em;
     font-weight: 600;
     font-variant: small-caps;
+
+    text-decoration: none;
+}
+a.home:hover {
+    background-color: var(--cor003);
+}
+a.home:active {
+    background-color: var(--cor002);
 }
 
 /* -- DIV FILHO Imagem -- */
@@ -680,6 +690,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 
     margin-top: 15px;
 
@@ -694,7 +705,7 @@ h5 {
 
 div#calculado > p {
     background-color: rgba(255, 255, 255, 0.975);
-    padding: 8px 18px;
+    padding: 8px 75px;
     border-radius:  50px;
 
 
