@@ -207,6 +207,50 @@ div#divContador > span {
 }
 
 
+div.extremidade[title] {
+    position: relative;
+    /* adiciona um cursor de ponteiro quando o usuário passa o mouse sobre o link */
+    cursor: pointer;
+}
+  
+  /* Esconde o texto da dica de ferramenta padrão */
+div.extremidade[title]:hover:before {
+    content: "";
+    display: none;
+}
+  
+  /* Mostra a dica de ferramenta personalizada */
+div.extremidade[title]:hover:after {
+    /* Define a aparência da dica de ferramenta */
+    content: attr(title);
+    background-color: var(--cor007);
+    color: var(--cor005);
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    /* Define uma transição suave para a animação da dica de ferramenta */
+    transition: opacity 0.2s ease-in-out;
+    /* Define uma opacidade inicial de 0 para que a dica de ferramenta seja invisível até ser exibida */
+    opacity: 0;
+    width: 85px;
+
+    font-size: 0.85em;
+}
+    /* Animação da dica de ferramenta personalizada */
+div.extremidade[title]:hover:after {
+    opacity: 1;
+}
+div.extremidade[title]:hover:before {
+  /* Outras propriedades CSS existentes... */
+  pointer-events: none;
+}
+
+
 /* --- SECTION 1 --- */
 /* -- Seção Pai -- */
 section.inicio, section.aba {
