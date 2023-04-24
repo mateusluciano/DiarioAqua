@@ -86,23 +86,23 @@ function calcularMetaAgua() {
     // backgrounds
     if (resultado > 2000 && resultado <= 2500) {
       var garrafa25 = document.querySelector('#garrafas');
-      garrafa25.style.backgroundImage = 'url(../imagens/water/Bottles2.5l.png)';
+      garrafa25.style.backgroundImage = 'url(imagens/water/Bottles2.5l.png)';
 
     } else if (resultado > 2500 && resultado <= 3000) {
       var garrafa30 = document.querySelector('#garrafas');
-      garrafa30.style.backgroundImage = 'url(../imagens/water/Bottles3l.png)';
+      garrafa30.style.backgroundImage = 'url(imagens/water/Bottles3l.png)';
 
     } else if (resultado > 3000 && resultado <= 3500) {
       var garrafa35 = document.querySelector('#garrafas');
-      garrafa35.style.backgroundImage = 'url(../imagens/water/Bottles3.5l.png)';
+      garrafa35.style.backgroundImage = 'url(imagens/water/Bottles3.5l.png)';
 
     } else if (resultado > 3500 && resultado <= 4000) {
       var garrafa40 = document.querySelector('#garrafas');
-      garrafa40.style.backgroundImage = 'url(../imagens/water/Bottles4l.png)';
+      garrafa40.style.backgroundImage = 'url(imagens/water/Bottles4l.png)';
 
     } else {
       var garrafaMuito = document.querySelector('#garrafas');
-      garrafaMuito.style.backgroundImage = 'url(../imagens/water/BottlesMais4l.png)';
+      garrafaMuito.style.backgroundImage = 'url(imagens/water/BottlesMais4l.png)';
     }
 
   }
