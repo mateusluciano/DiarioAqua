@@ -1,6 +1,29 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/icones.woff2') format('woff2');
+  }
+  .ico, .material-symbols-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    
+    font-size: 1.5em;
+  }
+
+
 * {
     font-family: 'Montserrat', Tahoma, sans-serif;
     margin: 0px;
@@ -102,11 +125,11 @@ menu#menu {
 /* Menu Aberto */
 menu > div#titmenu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-content: center;
     align-items: center;
 }
-menu h3 {
+menu > div#titmenu > h3 {
 /*     margin: 20px 0px; */
 
     font-family: var(--fonte01);
@@ -120,6 +143,8 @@ menu h3 {
 menu > div#titmenu > span {
     margin: 5px;
     padding: 10px;
+
+    
 
     font-weight: bold;
     color: var(--cor007);
