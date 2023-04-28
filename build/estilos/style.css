@@ -407,6 +407,13 @@ p#oi {
     font-size: 0.83em;
     background-color: var(--cor002);
 }
+#b02:hover {
+    background-color: var(--cor003);
+}
+#b02:active {
+    color: var(--cor003);
+    background-color: var(--cor006);
+}
 
 /* -- DICAS ABA2 -- */
 .aba2 {
