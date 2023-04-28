@@ -200,21 +200,21 @@
 
             <div id="formDownload">
                 <form action="download.php" method="post" autocomplete="on">
-                    <label for="nome" class="down">Nome Completo</label>
-                    <input class="formInput" type="text" name="nome" id="nomeDown" required minlength="6" placeholder="Seu nome aqui :&#41;"> 
+                    <label for="nomeDown" class="down">Nome Completo</label>
+                    <input class="formInput" type="text" name="nnome" id="nomeDown" required minlength="6" placeholder="Seu nome aqui :&#41;"> 
 
-                    <label for="birth" class="down">Data de Nascimento</label>
+                    <label for="niver" class="down">Data de Nascimento</label>
                     <input class="formInput" type="date" name="birth" id="niver" required max="2005-01-01">
 
-                    <label for="what" class="down">WhatsApp</label>
+                    <label for="whatsapp" class="down">WhatsApp</label>
                     <input class="formInput" type="tel" name="what" id="whatsapp" required placeholder="(00) 00000-0000" oninput="formatarTelefone()">
 
                     <label for="min" class="down">Você bebe o mínimo de 2 litros diariamente?</label>
                     <div class="minimoDiario">
-                        <label for="bebeMinimo">
+                        <label for="minSim" class="down2">
                             <input  type="radio" name="min" id="minSim" value="Sim"> Sim
                         </label>
-                        <label for="bebeMinimoN">
+                        <label for="minNao" class="down2">
                             <input  type="radio" name="min" id="minNao" value="Nao" checked> Não
                         </label>
                     </div>
@@ -238,27 +238,7 @@
     </footer>
     
     <div id="space"></div>
-    <script>
-        function updateVisitorCount() {
-            fetch('/visitor_count')
-                .then(response => response.json())
-                .then(data => {
-                    document.querySelector('.cont').innerText = data.count;
-                });
-        }
 
-        function addVisitor() {
-            setTimeout(() => {
-                fetch('/add_visitor')
-                    .then(response => response.json());
-            }, 60000);
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            addVisitor();
-            setInterval(updateVisitorCount, 1000);
-        });
-    </script>
     <script src="js/menu.js"></script>
     <script src="js/inputsJuntos.js" defer></script>
     <script src="js/barraRestante.js" defer></script>

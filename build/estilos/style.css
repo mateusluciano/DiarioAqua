@@ -867,7 +867,12 @@ label.down {
     color: var(--cor003);
     font-size: 0.75em;
 
+    cursor: pointer;
+
     margin-top: 10px;
+}
+label.down2 {
+    cursor: pointer;
 }
 
 input.formInput {
