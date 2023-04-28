@@ -688,10 +688,12 @@ input[type="number"] {
     font-weight: 700;
     color: var(--cor001);
 }
-p#quilo {
+label#quilo {
     font-family: var(--fonte01);
     font-weight: 700;
     color: var(--cor007);
+
+    cursor: pointer;
 }
 
 #pesoAtual {
