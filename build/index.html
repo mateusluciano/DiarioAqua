@@ -238,6 +238,27 @@
     </footer>
     
     <div id="space"></div>
+    <script>
+        function updateVisitorCount() {
+            fetch('/visitor_count')
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelector('.cont').innerText = data.count;
+                });
+        }
+
+        function addVisitor() {
+            setTimeout(() => {
+                fetch('/add_visitor')
+                    .then(response => response.json());
+            }, 60000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            addVisitor();
+            setInterval(updateVisitorCount, 1000);
+        });
+    </script>
     <script src="js/menu.js"></script>
     <script src="js/inputsJuntos.js" defer></script>
     <script src="js/barraRestante.js" defer></script>
