@@ -952,7 +952,7 @@ footer div.info {
     text-align: right;
 }
 
-h6 {
+h4 {
     font-family: var(--fonte02);
     font-size: 2.85em;
     -webkit-text-stroke: 1px var(--cor002);
