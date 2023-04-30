@@ -14,6 +14,7 @@ app.get('/', async (req, res) => {
     await client.connect();
     const result = await client.query('SELECT * FROM tempo_user');
     res.send(result.rows);
+    console.log(res,result)
   } catch (error) {
     console.error('Erro ao buscar usuários no banco de dados', error);
     res.status(500).send('Erro ao buscar usuários no banco de dados');
