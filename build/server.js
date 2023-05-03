@@ -1,5 +1,5 @@
-import { Client } from 'pg';
-import config from 'config';
+const { Client } = require('pg');
+const config = require('config');
 
 const client = new Client({
   user: config.databaseUser,
@@ -22,3 +22,5 @@ app.get('/', async (req, res) => {
     await client.end();
   }
 });
+
+module.exports = app;
