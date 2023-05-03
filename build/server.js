@@ -12,7 +12,7 @@ const client = new Client({
 app.get('/', async (req, res) => {
   try {
     await client.connect();
-    const result = await client.query('SELECT * FROM tempo_user');
+    const result = await client.query('SELECT * FROM teste');
     res.send(result.rows);
     console.log(res,result)
   } catch (error) {
