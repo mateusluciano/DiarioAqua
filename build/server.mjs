@@ -1,5 +1,5 @@
 import { Client } from 'pg';
-const config = require('config');
+import config from 'config';
 
 const client = new Client({
   user: config.databaseUser,
