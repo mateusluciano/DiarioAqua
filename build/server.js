@@ -1,4 +1,4 @@
-const { Client } = require('pg');
+import { Client } from 'pg';
 const config = require('config');
 
 const client = new Client({
